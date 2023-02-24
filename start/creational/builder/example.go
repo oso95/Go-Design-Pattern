@@ -26,7 +26,14 @@ func main() {
 		fmt.Println(err)
 	}else{
 		// Print the notification
-		fmt.Println(n)
+		fmt.Printf("--------------------\n")
+		fmt.Printf("Title: %s\n", n.title)
+		fmt.Printf("Subtitle: %s\n", n.subtitle)
+		fmt.Printf("Message: %s\n", n.message)
+		fmt.Printf("Image: %s\n", n.image)
+		fmt.Printf("Icon: %s\n", n.icon)
+		fmt.Printf("Priority: %d\n", n.priority)
+		fmt.Printf("Type: %s\n", n.notType)
 	}
 	
 }
