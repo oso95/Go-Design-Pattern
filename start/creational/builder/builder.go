@@ -47,11 +47,11 @@ func (nb *NotificationBuilder) SetType(notType string) {
 func (nb *NotificationBuilder) Build() (*Notification, error) {
 
 	if nb.Icon != "" && nb.Subtitle == "" {
-		return nil, fmt.Errorf("Subtitle is required when icon is set")
+		return nil, fmt.Errorf("subtitle is required when icon is set")
 	}
 
 	if nb.Priority > 5 {
-		return nil, fmt.Errorf("Priority can't be greater than 5")
+		return nil, fmt.Errorf("priority can't be greater than 5")
 	}
 
 	return &Notification{
